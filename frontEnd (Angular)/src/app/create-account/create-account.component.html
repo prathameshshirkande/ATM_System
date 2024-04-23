@@ -1,0 +1,15 @@
+<div class="child">
+        <div class="input">
+               <span> <b>Account id : </b><input type="text" id="accountid" name="accountid" [(ngModel)]="account_id" placeholder="Enter Account No" /><br></span>
+
+               <span> <b>Name : </b><input type="text" id="name" name="name" [(ngModel)]="name" /><br> </span>
+
+               <span> <b>Pin : </b><input type="number" id="pin" name="pin" [(ngModel)]="pin" /><br> </span>
+
+                <span><b> Amount : </b><input type="number" id="pin" name="pin" [(ngModel)]="amount"/><br> </span>
+
+        </div>
+
+         <button (click)="create()" class="btn btn-info" id="create">Create Account</button>
+</div>
+

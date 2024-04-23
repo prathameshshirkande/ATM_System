@@ -1,0 +1,21 @@
+
+  
+
+  input{
+    margin:10px;
+    border-radius: 20px;
+  }
+  button{
+    margin: 30px;
+  }
+  .input{
+   display: flex;
+   flex-direction: column;
+   border: 2px solid black;
+   box-shadow: 5px 5px lightgray;
+   
+  }
+  #create{
+    border: 2px solid black;
+    box-shadow: 5px 5px lightblue;
+  }

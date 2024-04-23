@@ -1,0 +1,10 @@
+
+button{
+    margin:20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px lightgreen;
+}
+input{
+    margin:10px;
+    border-radius: 20px;
+  }

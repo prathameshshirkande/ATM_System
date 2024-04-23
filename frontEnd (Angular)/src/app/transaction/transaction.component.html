@@ -1,0 +1,38 @@
+<div *ngIf="isLogin==1">
+    
+        <div *ngIf="trans!=0" >
+
+            <button (click)="back()" class="btn btn-info" id="back">Back</button>
+            
+        </div>
+        <h5><u>User </u>:- {{name}}</h5><br>
+   
+        <div *ngIf="trans==0" id="transButton">
+            
+        <button (click)="deposit()" class="btn btn-outline-secondary" >deposit</button>
+        <button (click)="withdrawal()" class="btn btn-outline-secondary" >withdrawal</button>
+        <button (click)="balance()" class="btn btn-outline-secondary" >Check Balance</button>
+        </div>
+
+        <div *ngIf="trans==1">
+
+            <app-deposit></app-deposit>
+
+        </div>
+        <div *ngIf="trans==2">
+
+            <app-withdrawal></app-withdrawal>
+
+        </div>
+        <div *ngIf="trans==3">
+        <app-check-balance></app-check-balance>
+        </div>
+
+</div>
+<div *ngIf="isLogin==0">
+    <div class="input">
+       <span> <b>Enter Account NO : </b><input type="number" [(ngModel)]="account_id"><br><br></span>
+        <span> <b>Enter Pin : </b><input type="number" [(ngModel)]="pin"><br></span>
+    </div>
+    <button (click)="procced()" class="btn btn-success" id="procced">Procced</button>
+</div>

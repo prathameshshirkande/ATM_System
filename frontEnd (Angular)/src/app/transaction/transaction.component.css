@@ -1,0 +1,39 @@
+
+
+input{
+  margin:10px;
+  border-radius: 20px;
+}
+.input{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-shadow: 5px 5px lightgray;
+  
+ }
+ 
+
+  #procced{
+    margin: 40px;
+    border: 2px solid black;
+    box-shadow: 5px 5px lightgreen;
+    
+  }
+  
+  div>div>button{
+    display: block;
+    margin: 25px;
+    
+    
+  }
+  #back{
+        border: 2px solid black;
+        box-shadow: 5px 5px lightblue;
+  }
+  #transButton button{
+        border: 2px solid black;
+        box-shadow: 5px 5px rgb(224, 218, 218);
+  }
+  
+ 
+  

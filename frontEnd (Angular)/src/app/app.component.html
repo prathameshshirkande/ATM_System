@@ -1,0 +1,31 @@
+<body>
+<div id="main" class="bg">
+      <div  class="parent">
+
+          <div *ngIf="value!=0" id="exit">
+
+            <button (click)="exit()" class="btn btn-danger" id="exit1">Exit</button>
+            
+
+          </div>
+
+          <div *ngIf="value==0" id="home">
+              <b><h1>Welcome To ATM System</h1></b><br><br>
+
+                <button (click)="transaction()" class="btn btn-info" id="btn">Transaction</button>
+                
+                <button (click)="create()" class="btn btn-info" id="btn">Create Account</button>
+
+          </div><br>
+
+          <div *ngIf="value==1">
+            <app-transaction></app-transaction>
+          </div>
+
+          <div *ngIf="value==2">
+            <app-create-account></app-create-account>
+          </div>
+
+      </div>
+</div>
+</body>
